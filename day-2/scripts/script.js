@@ -25,6 +25,7 @@ Array-এর length print করো।
 
 
 
+
 /*
 Problem 2 — Update Element
 const colors = ["Red", "Green", "Blue"];
@@ -48,10 +49,10 @@ const numbers = [10, 20, 30];
 Array print করো।
 ⚠️ Hint: Documentation পড়ে method খুঁজে বের করবে।
 */
-const numbers = [10, 20, 30];
-numbers.push(40)
-numbers.unshift(0)
-console.log(numbers);
+// const numbers = [10, 20, 30];
+// numbers.push(40)
+// numbers.unshift(0)
+// console.log(numbers);
 
 
 
@@ -64,8 +65,11 @@ const cities = ["Dhaka", "Riyadh", "Madinah", "Jeddah"];
 শেষ element remove করো।
 Updated array print করো।
 */
+// const cities = ["Dhaka", "Riyadh", "Madinah", "Jeddah"];
 
-
+// cities.shift();
+// cities.pop();
+// console.log(cities)
 
 
 
@@ -77,8 +81,15 @@ Loop ব্যবহার করে:
 Expected Output:
 Total Marks: 400
 */
+// let totalMark = 0;
 
+// const marks = [70, 85, 90, 60, 95];
 
+// for (let mark of marks){
+//     totalMark += mark
+// }
+
+// console.log(totalMark);
 
 
 
@@ -90,3 +101,21 @@ Highest temperature
 Lowest temperature
 ⚠️ Math.max() বা Math.min() ব্যবহার করবে না।
 */
+
+const temperatures = [32, 35, 30, 28, 36, 31];
+
+let highestTemperature = temperatures[0];
+let lowestTemperature = temperatures[0];
+
+for (const temperature of temperatures){
+
+    if(temperature > highestTemperature){
+        highestTemperature = temperature
+    }
+
+    if(temperature < lowestTemperature){
+        lowestTemperature = temperature
+    }
+}
+
+console.log(highestTemperature, lowestTemperature)
