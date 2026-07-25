@@ -7,11 +7,11 @@ const laptop = {
     price: 3200
 }*/
 
-const laptop = {
-    name: "Modern 14",
-    brand: "MSI",
-    price: 3200
-}
+// const laptop = {
+//     name: "Modern 14",
+//     brand: "MSI",
+//     price: 3200
+// }
 // const { name, brand, price } = laptop;
 // console.log(`
 //     Model: ${name}
@@ -209,13 +209,13 @@ console.log(product["name"]);
 Run করার আগে output predict করবে।
 */
 
-const product = {
-  name: "Mouse"
-};
+// const product = {
+//   name: "Mouse"
+// };
 
-const key = "name";
+// const key = "name";
 
-console.log(product.key);
-console.log(product[key]);
-console.log(product["key"]);
-console.log(product["name"]);
+// console.log(product.key); undefined
+// console.log(product[key]); mouse
+// console.log(product["key"]); undefined
+// console.log(product["name"]); mouse
