@@ -34,3 +34,27 @@ Object থেকে brand property delete করো।
 */
 // delete laptop.brand;
 // console.log(laptop)
+
+
+// p4************************************
+/*Problem 4 — Dynamic Property Access
+const student = {
+  name: "Saber",
+  age: 30,
+  country: "Bangladesh"
+};
+একটি variable তৈরি করো:
+const key = "country";
+এখন variable ব্যবহার করে value print করো।
+*/
+const student = {
+  name: "Saber",
+  age: 30,
+  country: "Bangladesh"
+};
+const key = "name";
+console.log(student.key)
+
+
+// 
+
