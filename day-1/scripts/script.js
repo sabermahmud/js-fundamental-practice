@@ -47,14 +47,63 @@ const student = {
 const key = "country";
 এখন variable ব্যবহার করে value print করো।
 */
-const student = {
-  name: "Saber",
-  age: 30,
-  country: "Bangladesh"
+// const student = {
+//   name: "Saber",
+//   age: 30,
+//   country: "Bangladesh"
+// };
+// const key = "name";
+// console.log(student.key)
+
+// p5 ***************************************
+/*
+Problem 5 — Object Iteration
+নিচের object-এর সব key এবং value print করো।
+const product = {
+  name: "Mouse",
+  price: 500,
+  stock: 12
 };
-const key = "name";
-console.log(student.key)
+*/
+// const product = {
+//   name: "Mouse",
+//   price: 500,
+//   stock: 12
+// };
+
+// for( let prop in product ){
+//     console.log(`${prop}: ${product[prop]}`)
+// }
 
 
-// 
+//p6 ******************************************
+/*
+Problem 6 — Employee Object
+একটি object তৈরি করো।
+name
+position
+salary
+department
+isActive
+তারপর—
+    1. Salary update করো। 
+    2. নতুন property experience যোগ করো। 
+    3. department delete করো। 
+    4. for...in দিয়ে সব key ও value print করো। 
+*/
 
+const employee = {
+    name: "Md Saber Mahmud",
+    position: "Junior Developer",
+    salary: 3000,
+    department: "Frontend",
+    isActive: true
+}
+employee.salary = 3500;
+employee.experience = "3 years";
+delete employee.department;
+console.log(employee);
+
+for(const key in employee){
+    console.log(`${key}: ${employee[key]}`)
+}
