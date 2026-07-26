@@ -102,20 +102,85 @@ Lowest temperature
 ⚠️ Math.max() বা Math.min() ব্যবহার করবে না।
 */
 
-const temperatures = [32, 35, 30, 28, 36, 31];
+// const temperatures = [32, 35, 30, 28, 36, 31];
 
-let highestTemperature = temperatures[0];
-let lowestTemperature = temperatures[0];
+// let highestTemperature = temperatures[0];
+// let lowestTemperature = temperatures[0];
 
-for (const temperature of temperatures){
+// for (const temperature of temperatures){
 
-    if(temperature > highestTemperature){
-        highestTemperature = temperature
-    }
+//     if(temperature > highestTemperature){
+//         highestTemperature = temperature
+//     }
 
-    if(temperature < lowestTemperature){
-        lowestTemperature = temperature
+//     if(temperature < lowestTemperature){
+//         lowestTemperature = temperature
+//     }
+// }
+
+// console.log(highestTemperature, lowestTemperature)
+
+
+
+
+// p6 **********************************************
+/*
+Problem 6 — Even Numbers
+const numbers = [12, 7, 9, 20, 15, 18];
+Loop ব্যবহার করে শুধু even number-গুলো print করো।
+Expected Output:
+12
+20
+18
+⚠️ filter() ব্যবহার করবে না।
+*/
+const numbers = [12, 7, 9, 20, 15, 18];
+
+for(const number of numbers){
+    if(number % 2 === 0){
+        console.log(number)
     }
 }
 
-console.log(highestTemperature, lowestTemperature)
+
+
+// p7 **********************************************
+/*
+Problem 7 — Count Even Numbers
+একই array ব্যবহার করো।
+Loop ব্যবহার করে even number কয়টি আছে বের করো।
+Expected Output:
+Total Even Numbers: 3
+*/
+
+
+
+
+// p8 **********************************************
+/*
+Problem 8 — Average Marks
+const marks = [70, 85, 90, 60, 95];
+Loop ব্যবহার করে average বের করো।
+Expected Output:
+Average Marks: 80
+*/
+
+
+// p9 **********************************************
+/*
+Problem 9 — Find a Name
+const students = ["Saber", "Ali", "Omar", "Hasan"];
+Loop ব্যবহার করে check করো "Omar" আছে কি না।
+Output: Found   অথবা Not Found
+⚠️ includes() ব্যবহার করবে না।
+*/
+
+
+
+// bonus-2 ********************************************
+/*
+🌟 Bonus Challenge
+const numbers = [2, 4, 6, 8];
+Loop ব্যবহার করে সব সংখ্যার গুণফল বের করো।
+Expected Output: 384:
+*/
