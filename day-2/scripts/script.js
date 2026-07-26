@@ -134,13 +134,13 @@ Expected Output:
 18
 ⚠️ filter() ব্যবহার করবে না।
 */
-const numbers = [12, 7, 9, 20, 15, 18];
+// const numbers = [12, 7, 9, 20, 15, 18];
 
-for(const number of numbers){
-    if(number % 2 === 0){
-        console.log(number)
-    }
-}
+// for(const number of numbers){
+//     if(number % 2 === 0){
+//         console.log(number)
+//     }
+// }
 
 
 
@@ -152,6 +152,16 @@ Loop ব্যবহার করে even number কয়টি আছে ব�
 Expected Output:
 Total Even Numbers: 3
 */
+// const numbers = [12, 7, 9, 20, 15, 18];
+// let count = 0;
+// for( const number of numbers ){
+//     if(number % 2 === 0){
+//         count ++
+//     }
+// }
+
+// console.log(count);
+
 
 
 
@@ -164,6 +174,13 @@ Loop ব্যবহার করে average বের করো।
 Expected Output:
 Average Marks: 80
 */
+// const marks = [70, 85, 90, 60, 95];
+// let totalMark = 0;
+// for(const mark of marks){
+//     totalMark += mark;
+// }
+// const averageMarks = totalMark / marks.length;
+// console.log(averageMarks)
 
 
 // p9 **********************************************
@@ -174,6 +191,27 @@ Loop ব্যবহার করে check করো "Omar" আছে কি ন
 Output: Found   অথবা Not Found
 ⚠️ includes() ব্যবহার করবে না।
 */
+// const students = ["Saber", "Ali", "Omar", "Hasan"];
+
+// let isFound = false
+
+// for (const student of students) {
+
+//     if (student === "Omar") {
+//         isFound = true
+//         break
+//     }
+
+// }
+
+// if (isFound) {
+//     console.log("Found")
+// }
+// else {
+//     console.log("Not Found")
+// }
+
+
 
 
 
@@ -184,3 +222,12 @@ const numbers = [2, 4, 6, 8];
 Loop ব্যবহার করে সব সংখ্যার গুণফল বের করো।
 Expected Output: 384:
 */
+
+const numbers = [2, 4, 6, 8];
+
+let result = 1;
+
+for (const number of numbers){
+    result = result * number
+}
+console.log(result)
