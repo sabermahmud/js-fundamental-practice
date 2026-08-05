@@ -1,85 +1,85 @@
-console.log("day 3 Connected")
-/*
-map() – ১০টি Practice
-ধরো,
-const numbers = [5, 10, 15, 20, 25];
-প্রতিটি সংখ্যাকে 2 দিয়ে গুণ করো।
-*/
-const numbers = [5, 10, 15, 20, 25];
-console.log("original array:", numbers)
-const double = numbers.map(number => number * 2)
-console.log(double)
+// console.log("day 3 Connected")
+// /*
+// map() – ১০টি Practice
+// ধরো,
+// const numbers = [5, 10, 15, 20, 25];
+// প্রতিটি সংখ্যাকে 2 দিয়ে গুণ করো।
+// */
+// const numbers = [5, 10, 15, 20, 25];
+// console.log("original array:", numbers)
+// const double = numbers.map(number => number * 2)
+// console.log(double)
 
-/*
-প্রতিটি সংখ্যার সাথে 10 যোগ করো।
-*/
-const add10 = numbers.map(number => number + 10)
-console.log(add10)
+// /*
+// প্রতিটি সংখ্যার সাথে 10 যোগ করো।
+// */
+// const add10 = numbers.map(number => number + 10)
+// console.log(add10)
 
-/*
-প্রতিটি সংখ্যার square বের করো।
-*/
-const square = numbers.map(number => number * number)
-console.log(square)
+// /*
+// প্রতিটি সংখ্যার square বের করো।
+// */
+// const square = numbers.map(number => number * number)
+// console.log(square)
 
-/*
-প্রতিটি সংখ্যাকে string-এ convert করো।
-*/
-const convertToString = /*numbers.map(number => number.toString())*/
-    numbers.map(String)
-console.log(convertToString)
+// /*
+// প্রতিটি সংখ্যাকে string-এ convert করো।
+// */
+// const convertToString = /*numbers.map(number => number.toString())*/
+//     numbers.map(String)
+// console.log(convertToString)
 
-/*
-প্রতিটি সংখ্যার আগে "Number: " যোগ করো।
-*/
-const startWithNumber = numbers.map(number => "Number : " + number)
-console.log(startWithNumber)
-
-
-
-/*
-ধরো,
-const phones = [
-  { brand: "Samsung", price: 1200 },
-  { brand: "Apple", price: 2000 },
-  { brand: "Xiaomi", price: 900 }
-];
-
-শুধু সব brand-এর নামের array বানাও।
-*/
-const phones = [
-    { brand: "Samsung", price: 1200 },
-    { brand: "Apple", price: 2000 },
-    { brand: "Xiaomi", price: 900 }
-];
-const brandsName = phones.map(phone => phone.brand)
-console.log(brandsName)
+// /*
+// প্রতিটি সংখ্যার আগে "Number: " যোগ করো।
+// */
+// const startWithNumber = numbers.map(number => "Number : " + number)
+// console.log(startWithNumber)
 
 
-/*
-শুধু সব price-এর array বানাও।
-*/
-const priceArr = phones.map(phone => phone.price)
-console.log(priceArr)
 
-/*
-প্রতিটি phone-এর price-এ 100 যোগ করে নতুন object তৈরি করো।
-*/
-const add100ToPrice = phones.map(phone => ({ ...phone, price: parseInt(phone.price) + 100}));
-console.log(add100ToPrice)
+// /*
+// ধরো,
+// const phones = [
+//   { brand: "Samsung", price: 1200 },
+//   { brand: "Apple", price: 2000 },
+//   { brand: "Xiaomi", price: 900 }
+// ];
 
-/*
-প্রতিটি brand-কে uppercase করো।
-*/
-const brandNamesToUpperCase = phones.map(phone => phone.brand.toUpperCase())
-console.log(brandNamesToUpperCase)
+// শুধু সব brand-এর নামের array বানাও।
+// */
+// const phones = [
+//     { brand: "Samsung", price: 1200 },
+//     { brand: "Apple", price: 2000 },
+//     { brand: "Xiaomi", price: 900 }
+// ];
+// const brandsName = phones.map(phone => phone.brand)
+// console.log(brandsName)
 
-/*
-"Samsung - 1200" এর মতো string-এর array বানাও।
-*/
 
-const createStingArr = phones.map(phone => `${phone.brand} - ${phone.price}`)
-console.log(createStingArr)
+// /*
+// শুধু সব price-এর array বানাও।
+// */
+// const priceArr = phones.map(phone => phone.price)
+// console.log(priceArr)
+
+// /*
+// প্রতিটি phone-এর price-এ 100 যোগ করে নতুন object তৈরি করো।
+// */
+// const add100ToPrice = phones.map(phone => ({ ...phone, price: parseInt(phone.price) + 100}));
+// console.log(add100ToPrice)
+
+// /*
+// প্রতিটি brand-কে uppercase করো।
+// */
+// const brandNamesToUpperCase = phones.map(phone => phone.brand.toUpperCase())
+// console.log(brandNamesToUpperCase)
+
+// /*
+// "Samsung - 1200" এর মতো string-এর array বানাও।
+// */
+
+// const createStingArr = phones.map(phone => `${phone.brand} - ${phone.price}`)
+// console.log(createStingArr)
 
 
 
@@ -87,10 +87,31 @@ console.log(createStingArr)
 🔵 filter() – ১০টি Practice
 const numbers = [5, 10, 15, 20, 25, 30];
 15-এর বেশি সংখ্যা বের করো।
+*/
+const numbers = [5, 10, 15, 20, 25, 30];
+const biggerThen15 = numbers.filter(number => number > 15);
+console.log(biggerThen15)
+/*
 শুধু even সংখ্যা বের করো।
+*/
+const getEvenNumber = numbers.filter(number => number % 2 === 0);
+console.log(getEvenNumber)
+/*
 শুধু odd সংখ্যা বের করো।
+*/
+const getOddNumbers = numbers.filter(number => number % 2 !== 0);
+console.log(getOddNumbers)
+/*
 20-এর কম সংখ্যা বের করো।
+*/
+const getLessThen20 = numbers.filter(number => number < 20);
+console.log(getLessThen20);
+/*
 10 এবং 25-এর মাঝের সংখ্যা বের করো।
+*/
+const getMidNumbers = numbers.filter(number => number > 10 && number < 25)
+console.log(getMidNumbers)
+/*
 const phones = [
   { brand: "Samsung", price: 1200, ram: 8 },
   { brand: "Apple", price: 2000, ram: 6 },
@@ -98,10 +119,40 @@ const phones = [
   { brand: "OnePlus", price: 1500, ram: 16 }
 ];
 1500-এর কম দামের phone বের করো।
+*/
+const phones = [
+    { brand: "Samsung", price: 1200, ram: 8 },
+    { brand: "Apple", price: 2000, ram: 6 },
+    { brand: "Xiaomi", price: 900, ram: 12 },
+    { brand: "OnePlus", price: 1500, ram: 16 }
+];
+const findPhones = phones.filter(phone => parseInt(phone.price) < 1500);
+console.log(findPhones)
+
+
+/*
 8GB বা তার বেশি RAM-এর phone বের করো।
+*/
+const biggerThen8gbRam = phones.filter(phone => phone.ram >= 8)
+console.log(biggerThen8gbRam)
+/*
 শুধু Samsung phone বের করো।
+*/
+const samsungPhones = phones.filter(phone => phone.brand === "Samsung")
+console.log(samsungPhones)
+
+/*
 যেসব phone-এর RAM 12GB-এর বেশি সেগুলো বের করো।
+*/
+const biggerThen12gbRam = phones.filter(phone => parseInt(phone.ram) > 12);
+console.log(biggerThen12gbRam)
+
+/*
 যেসব phone-এর price 1000-এর বেশি সেগুলো বের করো।
+*/
+const biggerThen1000 = phones.filter(phone => parseInt(phone.price) > 1000);
+console.log(biggerThen1000)
+/*
 🟠 find() – ১০টি Practice
 const phones = [
   { brand: "Samsung", price: 1200, ram: 8 },
