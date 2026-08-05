@@ -25,7 +25,8 @@ console.log(square)
 /*
 প্রতিটি সংখ্যাকে string-এ convert করো।
 */
-const convertToString = numbers.map(number => number.toString())
+const convertToString = /*numbers.map(number => number.toString())*/
+    numbers.map(String)
 console.log(convertToString)
 
 /*
@@ -43,12 +44,46 @@ const phones = [
   { brand: "Apple", price: 2000 },
   { brand: "Xiaomi", price: 900 }
 ];
+
 শুধু সব brand-এর নামের array বানাও।
+*/
+const phones = [
+    { brand: "Samsung", price: 1200 },
+    { brand: "Apple", price: 2000 },
+    { brand: "Xiaomi", price: 900 }
+];
+const brandsName = phones.map(phone => phone.brand)
+console.log(brandsName)
+
+
+/*
 শুধু সব price-এর array বানাও।
+*/
+const priceArr = phones.map(phone => phone.price)
+console.log(priceArr)
+
+/*
 প্রতিটি phone-এর price-এ 100 যোগ করে নতুন object তৈরি করো।
+*/
+const add100ToPrice = phones.map(phone => ({ ...phone, price: parseInt(phone.price) + 100}));
+console.log(add100ToPrice)
+
+/*
 প্রতিটি brand-কে uppercase করো।
+*/
+const brandNamesToUpperCase = phones.map(phone => phone.brand.toUpperCase())
+console.log(brandNamesToUpperCase)
+
+/*
 "Samsung - 1200" এর মতো string-এর array বানাও।
-*//*
+*/
+
+const createStingArr = phones.map(phone => `${phone.brand} - ${phone.price}`)
+console.log(createStingArr)
+
+
+
+/*
 🔵 filter() – ১০টি Practice
 const numbers = [5, 10, 15, 20, 25, 30];
 15-এর বেশি সংখ্যা বের করো।
