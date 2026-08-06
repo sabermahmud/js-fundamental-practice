@@ -26,7 +26,6 @@ Output:
 */
 
 const calculateBill = (amount, taxRate = 0.05) => {
-    // const taxAmount = (amount / 100) * (taxRate*100)
     const taxAmount = amount* taxRate
     const afterTax = amount + taxAmount
     return afterTax
@@ -44,8 +43,11 @@ Output:
 "Arif\nDeveloper at Programming Hero"
 */
 
-
-
+const buildProfileCard = (user) => {
+ return `${user.name}\n${user.title} at ${user.company}`
+}
+console.log(buildProfileCard({ name: "Arif",title: "Developer",company: "Programming Hero" }
+))
 
 
 /*
