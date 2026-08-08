@@ -160,119 +160,138 @@ const phones = [
   { brand: "Xiaomi", price: 900, ram: 12 },
   { brand: "OnePlus", price: 1500, ram: 16 }
 ];
-প্রথম Samsung phone খুঁজে বের করো।
-*/
-const findSamsung = (phones) => {
-  let samsungPhone = phones.find(phone => phone.brand === "Samsung")
-  return samsungPhone
-}
-console.log(findSamsung([
-  { brand: "Samsung", price: 1200, ram: 8 },
-  { brand: "Apple", price: 2000, ram: 6 },
-  { brand: "Xiaomi", price: 900, ram: 12 },
-  { brand: "OnePlus", price: 1500, ram: 16 }
-]))
+// প্রথম Samsung phone খুঁজে বের করো।
+// */
+// const findSamsung = (phones) => {
+//   let samsungPhone = phones.find(phone => phone.brand === "Samsung")
+//   return samsungPhone
+// }
+// console.log(findSamsung([
+//   { brand: "Samsung", price: 1200, ram: 8 },
+//   { brand: "Apple", price: 2000, ram: 6 },
+//   { brand: "Xiaomi", price: 900, ram: 12 },
+//   { brand: "OnePlus", price: 1500, ram: 16 }
+// ]))
 
-/*
-প্রথম phone যার RAM 12GB।
-*/
-const first12GbPhone = (phones) => {
-  let first12Gb = phones.find(phone => phone.ram === 12)
-  return first12Gb
-}
-console.log(first12GbPhone([
-  { brand: "Samsung", price: 1200, ram: 8 },
-  { brand: "Apple", price: 2000, ram: 6 },
-  { brand: "Xiaomi", price: 900, ram: 12 },
-  { brand: "OnePlus", price: 1500, ram: 16 }
-]))
-/*
-প্রথম phone যার price 1000-এর কম।
-*/
-const firstUnder1000Price = (phones) => {
-  const firstUnder1000Phone = phones.find(phone => phone.price < 1000)
-  return firstUnder1000Phone
-}
-console.log(firstUnder1000Price([
-  { brand: "Samsung", price: 1200, ram: 8 },
-  { brand: "Apple", price: 2000, ram: 6 },
-  { brand: "Xiaomi", price: 900, ram: 12 },
-  { brand: "OnePlus", price: 1500, ram: 16 }
-]))
-/*
-প্রথম phone যার price 1800-এর বেশি।
-*/
-const firstUpper1800PricePhone = (phones) => {
-  const firstUpper1800Phone = phones.find(phone => phone.price > 1800)
-  return firstUpper1800Phone
-}
-console.log(firstUpper1800PricePhone([
-  { brand: "Samsung", price: 1200, ram: 8 },
-  { brand: "Apple", price: 2000, ram: 6 },
-  { brand: "Xiaomi", price: 900, ram: 12 },
-  { brand: "OnePlus", price: 1500, ram: 16 }
-]))
-/*
-প্রথম phone যার brand "Apple"।
-*/
-const firstApplePhone = (phones) => {
-  const applePhone = phones.find(phone => phone.brand === "Apple")
-  return applePhone
-}
-console.log(firstApplePhone([
-  { brand: "Samsung", price: 1200, ram: 8 },
-  { brand: "Apple", price: 2000, ram: 6 },
-  { brand: "Xiaomi", price: 900, ram: 12 },
-  { brand: "OnePlus", price: 1500, ram: 16 }
-]))
-/*
-const numbers = [5, 12, 17, 20, 31, 40];
-প্রথম even সংখ্যা খুঁজে বের করো।
-*/
-const firstEvenNumber = (numbers) => {
-  const evenNumber = numbers.find(number => number % 2 === 0)
-  return evenNumber
-}
-console.log(firstEvenNumber([5, 12, 17, 20, 31, 40]))
-/*
-প্রথম odd সংখ্যা খুঁজে বের করো।
-*/
-const firstOddNumber = (numbers) => {
-  const oddNumber = numbers.find(number => number % 2 !== 0)
-  return oddNumber
-}
-console.log(firstOddNumber([5, 12, 17, 20, 31, 40]))
-/*
-প্রথম সংখ্যা যা 20-এর বেশি।
-*/
-const firstBiggerThen20 = (numbers) => {
-  const biggerThen20 = numbers.find(number => number > 20);
-  return biggerThen20
-}
-console.log(firstBiggerThen20([5, 12, 17, 20, 31, 40]))
-/*
-প্রথম সংখ্যা যা 50-এর বেশি (কি return হবে?)
-*/
-const firstBiggerThen50 = (numbers) => {
-  const biggerThen50 = numbers.find(number => number > 50);
-  return 
-}
-console.log(firstBiggerThen50([5, 12, 17, 20, 31, 40]))
-/*
-প্রথম সংখ্যা যা 3 দিয়ে ভাগ যায়।
-*/
-const firstDividedBy3 = (numbers) => {
-  const dividedBy3 = numbers.find(number => number % 3 === 0)
-  return dividedBy3
-}
-console.log(firstDividedBy3([5, 12, 17, 20, 31, 40]))
+// /*
+// প্রথম phone যার RAM 12GB।
+// */
+// const first12GbPhone = (phones) => {
+//   let first12Gb = phones.find(phone => phone.ram === 12)
+//   return first12Gb
+// }
+// console.log(first12GbPhone([
+//   { brand: "Samsung", price: 1200, ram: 8 },
+//   { brand: "Apple", price: 2000, ram: 6 },
+//   { brand: "Xiaomi", price: 900, ram: 12 },
+//   { brand: "OnePlus", price: 1500, ram: 16 }
+// ]))
+// /*
+// প্রথম phone যার price 1000-এর কম।
+// */
+// const firstUnder1000Price = (phones) => {
+//   const firstUnder1000Phone = phones.find(phone => phone.price < 1000)
+//   return firstUnder1000Phone
+// }
+// console.log(firstUnder1000Price([
+//   { brand: "Samsung", price: 1200, ram: 8 },
+//   { brand: "Apple", price: 2000, ram: 6 },
+//   { brand: "Xiaomi", price: 900, ram: 12 },
+//   { brand: "OnePlus", price: 1500, ram: 16 }
+// ]))
+// /*
+// প্রথম phone যার price 1800-এর বেশি।
+// */
+// const firstUpper1800PricePhone = (phones) => {
+//   const firstUpper1800Phone = phones.find(phone => phone.price > 1800)
+//   return firstUpper1800Phone
+// }
+// console.log(firstUpper1800PricePhone([
+//   { brand: "Samsung", price: 1200, ram: 8 },
+//   { brand: "Apple", price: 2000, ram: 6 },
+//   { brand: "Xiaomi", price: 900, ram: 12 },
+//   { brand: "OnePlus", price: 1500, ram: 16 }
+// ]))
+// /*
+// প্রথম phone যার brand "Apple"।
+// */
+// const firstApplePhone = (phones) => {
+//   const applePhone = phones.find(phone => phone.brand === "Apple")
+//   return applePhone
+// }
+// console.log(firstApplePhone([
+//   { brand: "Samsung", price: 1200, ram: 8 },
+//   { brand: "Apple", price: 2000, ram: 6 },
+//   { brand: "Xiaomi", price: 900, ram: 12 },
+//   { brand: "OnePlus", price: 1500, ram: 16 }
+// ]))
+// /*
+// const numbers = [5, 12, 17, 20, 31, 40];
+// প্রথম even সংখ্যা খুঁজে বের করো।
+// */
+// const firstEvenNumber = (numbers) => {
+//   const evenNumber = numbers.find(number => number % 2 === 0)
+//   return evenNumber
+// }
+// console.log(firstEvenNumber([5, 12, 17, 20, 31, 40]))
+// /*
+// প্রথম odd সংখ্যা খুঁজে বের করো।
+// */
+// const firstOddNumber = (numbers) => {
+//   const oddNumber = numbers.find(number => number % 2 !== 0)
+//   return oddNumber
+// }
+// console.log(firstOddNumber([5, 12, 17, 20, 31, 40]))
+// /*
+// প্রথম সংখ্যা যা 20-এর বেশি।
+// */
+// const firstBiggerThen20 = (numbers) => {
+//   const biggerThen20 = numbers.find(number => number > 20);
+//   return biggerThen20
+// }
+// console.log(firstBiggerThen20([5, 12, 17, 20, 31, 40]))
+// /*
+// প্রথম সংখ্যা যা 50-এর বেশি (কি return হবে?)
+// */
+// const firstBiggerThen50 = (numbers) => {
+//   const biggerThen50 = numbers.find(number => number > 50);
+//   return 
+// }
+// console.log(firstBiggerThen50([5, 12, 17, 20, 31, 40]))
+// /*
+// প্রথম সংখ্যা যা 3 দিয়ে ভাগ যায়।
+// */
+// const firstDividedBy3 = (numbers) => {
+//   const dividedBy3 = numbers.find(number => number % 3 === 0)
+//   return dividedBy3
+// }
+// console.log(firstDividedBy3([5, 12, 17, 20, 31, 40]))
+// 
 /*
 🔴 reduce() – ১০টি Practice
+------------------------------------------------
+array.reduce((accumulator, currentValue) => {
+  // কাজ
+  return accumulator;
+}, initialValue);
+------------------------------------------------
 const numbers = [10, 20, 30, 40, 50];
 সব সংখ্যার যোগফল বের করো।
+*/
+const sumOfAll = (numbers) => {
+  const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+  },0)
+  return sum
+}
+console.log(sumOfAll([10, 20, 30, 40, 50]))
+/*
 সব সংখ্যার গুণফল বের করো।
+*//*
 সবচেয়ে বড় সংখ্যা বের করো।
+*//*
 সবচেয়ে ছোট সংখ্যা বের করো।
+*//*
 সব সংখ্যার average বের করো।
 const phones = [
   { brand: "Samsung", price: 1200, ram: 8 },
@@ -281,10 +300,15 @@ const phones = [
   { brand: "OnePlus", price: 1500, ram: 16 }
 ];
 সবচেয়ে দামি phone বের করো।
+*//*
 সবচেয়ে কম দামের phone বের করো।
+*//*
 সবচেয়ে বেশি RAM-এর phone বের করো।
+*//*
 সব phone-এর মোট price বের করো।
+*//*
 সব phone-এর মোট RAM বের করো।
+*//*
 🎯 Bonus Challenge (Interview Level)
 const students = [
   { name: "Ali", marks: 80 },
