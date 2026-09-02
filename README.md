@@ -48,22 +48,18 @@ This repository includes practice with concepts such as:
 
 ---
 
-## 📂 Repository Structure
-
-```text
+📂 Repository Structure
 js-fundamental-practice/
 │
-├── variables/
-├── conditionals/
-├── loops/
-├── arrays/
-├── objects/
-├── functions/
-├── problem-solving/
+├── day-01/
+├── day-02/
+├── day-03/
+├── day-04/
+├── day-05/
+├── day-06/
 ├── ...
 │
 └── README.md
-```
 
 The repository structure may evolve as I organize and expand my practice.
 
